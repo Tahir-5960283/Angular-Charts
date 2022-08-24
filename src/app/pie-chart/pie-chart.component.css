@@ -1,8 +1,18 @@
 .pie-chart-container{
     margin-top: 50px;
+    margin-bottom: 30px;
     margin-left: auto;
     margin-right: auto;
 }
 .para{
     padding-left: 50px;
 }
+.pie-container{
+    margin-top: 50px;
+    background-color: #f7f8fa;
+    width: 65vw;
+    height: 50vh;
+    margin-left: auto;
+    margin-right: auto; 
+}
+    

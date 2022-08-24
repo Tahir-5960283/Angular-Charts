@@ -25,7 +25,7 @@ export class ProgressGraphComponent  {
   yAxisLabel = '';
 
   colorScheme = {
-    domain: ['#4588f1', '#4588f1', '#4588f1', '#4588f1']
+    domain: ['#4588f1']
   };
 
   constructor() {
