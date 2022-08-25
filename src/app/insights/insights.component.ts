@@ -1,5 +1,5 @@
 import { AfterViewInit, Component, OnInit } from '@angular/core';
-import { AreaChartComponent,AreaChartSeries } from '@swimlane/ngx-charts';
+import { AreaChartComponent, AreaChartSeries } from '@swimlane/ngx-charts';
 
 // import { multi } from '../data';
 import { multi } from '../graph';
@@ -28,7 +28,7 @@ export class InsightsComponent implements OnInit, AfterViewInit {
   timeline: boolean = true;
 
   colorScheme: any = {
-    domain: ['#f9dad5', '#fbe9dd']
+    domain: ['#fbe9dd', '#f9dad5']
   };
 
 
@@ -53,7 +53,7 @@ export class InsightsComponent implements OnInit, AfterViewInit {
 
   public ngAfterViewInit() {
     setTimeout(() => {
-      this.setSeriesBorder(0, 'orange');
+      this.setSeriesBorder(0, 'rgb(230, 89, 23)');
       this.setSeriesBorder(1, 'red');
 
     }, 0);

@@ -10,7 +10,7 @@ import { multi } from '../customer';
 export class CustomerComponent implements OnInit, AfterViewInit {
 
   public multi!: any[];
-  view: any[] = [1500, 800];
+  view: any[] = [1200, 700];
 
   // options
   legend: boolean = true;
@@ -25,7 +25,7 @@ export class CustomerComponent implements OnInit, AfterViewInit {
   timeline: boolean = true;
 
   public colorScheme: any = {
-    domain: ['#e2f2e7', '#e7efd7', '#e4ecf9']
+    domain: ['#e2f2e7', '#e9eed7', '#e3ecfd']
   };
 
   constructor() {
@@ -49,9 +49,9 @@ export class CustomerComponent implements OnInit, AfterViewInit {
 
   public ngAfterViewInit() {
     setTimeout(() => {
-      this.setSeriesBorder(0, 'green');
-      this.setSeriesBorder(1, 'brown');
-      this.setSeriesBorder(2, 'blue');
+      this.setSeriesBorder(0, '#38a959');
+      this.setSeriesBorder(1, '#afb433');
+      this.setSeriesBorder(2, '#418af0');
     }, 0);
  
   }

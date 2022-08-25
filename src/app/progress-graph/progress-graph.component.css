@@ -1,4 +1,10 @@
 .container {
     margin-top: 50px;
-  
+     background-color: #ffffff;
+     width: 60vw;
+     height:60vh;
+     margin-left: auto;
+     margin-right: auto;
+     border: 2px solid blanchedalmond;
+ 
 }

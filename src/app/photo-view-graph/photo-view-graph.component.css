@@ -1,14 +1,14 @@
-
-.photo-view-container{
+.photo-view-container {
+    margin-top: 50px;
     background-color: #ffffff;
-    border: 2px solid #ecedef;
-    height: 60vh;
     width: 60vw;
+    height: 60vh;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 50px;
+    border: 2px solid blanchedalmond;
 }
-.photo-view-graph{
+
+.photo-view-graph {
     padding-left: 20px;
     padding-top: 10px;
 

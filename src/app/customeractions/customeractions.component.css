@@ -1,7 +1,23 @@
-.container{
- display: flex;
- flex-direction: column;
- justify-content: space-between;
- margin-top: 30px;
- 
+.c-container {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 60vw;
+  height: 60vh;
+  border: 2px solid blanchedalmond;
+  margin-left: auto;
+  margin-right: auto;
+
+
+}
+
+.chart-legend .legend-label-text {
+  font-size: 15px;
+
+}
+
+.centerrd {
+  padding-left: 20px;
+
 }

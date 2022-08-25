@@ -1,18 +1,18 @@
-<div class="main-chart-container" style="background-color: #f7f8fa;">
+<div class="main-chart-container">
   <div class="text">
     <h2>Insights</h2>
   </div>
- 
   <div class="chart-container ">
-  <div class="text-chart">
-    <h2>Where customer where you business on Google</h2>
-    <p>The google services that customers use to find your business</p>
-    <p>1 <strong>month</strong></p>
-    <p>Total views 1395</p>
-  </div>
-    <ngx-charts-area-chart class="area-chart-container-2" [view]="view" [scheme]="colorScheme" [legend]="legend" [showXAxisLabel]="showXAxisLabel"
-      [showYAxisLabel]="showYAxisLabel" [xAxis]="xAxis" [yAxis]="yAxis" [xAxisLabel]="xAxisLabel"
-      [yAxisLabel]="yAxisLabel" [timeline]="timeline" [results]="multi" (select)="onSelect($event)">
+    <div class="text-chart">
+      <h2>Where customer where you business on Google</h2>
+      <p>The google services that customers use to find your business</p>
+      <p>1 <strong>month</strong></p>
+      <p>Total views 1395</p>
+    </div>
+    <ngx-charts-area-chart class="area-chart-container-2" [view]="view" [scheme]="colorScheme" [legend]="legend"
+      [showXAxisLabel]="showXAxisLabel" [showYAxisLabel]="showYAxisLabel" [xAxis]="xAxis" [yAxis]="yAxis"
+      [xAxisLabel]="xAxisLabel" [yAxisLabel]="yAxisLabel" [timeline]="timeline" [results]="multi"
+      (select)="onSelect($event)">
     </ngx-charts-area-chart>
   </div>
 </div>

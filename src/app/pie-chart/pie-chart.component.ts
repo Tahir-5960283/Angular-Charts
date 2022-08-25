@@ -10,8 +10,7 @@ export class PieChartComponent implements OnInit,AfterViewInit {
 
 
  public single!: any[];
-  view: any[] = [700, 400];
-
+ view: any[] = [400, 700];
   // options
   gradient: boolean = true;
   showLegend: boolean = false;
@@ -19,7 +18,7 @@ export class PieChartComponent implements OnInit,AfterViewInit {
   isDoughnut: boolean = false;
 
   colorScheme = {
-    domain: ['#5AA454', '#A10A28', '#C7B42C', '#AAAAAA']
+    domain: ['#4589ea', '#3da453']
   };
 
   constructor() {
@@ -42,9 +41,9 @@ export class PieChartComponent implements OnInit,AfterViewInit {
 
   public ngAfterViewInit() {
     setTimeout(() => {
-      this.setSeriesBorder(0, 'green');
-      this.setSeriesBorder(1, 'brown');
-      this.setSeriesBorder(2, 'blue');
+      this.setSeriesBorder(0, '#4589ea');
+      this.setSeriesBorder(1, '#3da453');
+      // this.setSeriesBorder(2, 'blue');
     }, 0);
  
   }

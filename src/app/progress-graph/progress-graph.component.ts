@@ -12,7 +12,7 @@ export class ProgressGraphComponent  {
  public single!: any[];
  public  multi!: any[];
 
-  view: any[] = [1200, 600];
+ view: any[] = [1200, 700];
 
   // options
   showXAxis = true;
