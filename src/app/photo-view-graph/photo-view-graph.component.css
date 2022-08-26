@@ -1,0 +1,15 @@
+
+.photo-view-container{
+    background-color: #ffffff;
+    border: 2px solid #ecedef;
+    height: 60vh;
+    width: 60vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+.photo-view-graph{
+    padding-left: 20px;
+    padding-top: 10px;
+
+}

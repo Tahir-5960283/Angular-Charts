@@ -1,0 +1,21 @@
+
+<div class="container">
+  <h1>Phone calls</h1>
+  <p>When and how many times customer call your business</p>
+  <p>1 <strong>month</strong></p>
+  <p>Total calls 55</p>
+    <ngx-charts-bar-vertical
+    [view]="view"
+    [scheme]="colorScheme"
+    [results]="single"
+    [gradient]="gradient"
+    [xAxis]="showXAxis"
+    [yAxis]="showYAxis"
+    [legend]="showLegend"
+    [showXAxisLabel]="showXAxisLabel"
+    [showYAxisLabel]="showYAxisLabel"
+    [xAxisLabel]="xAxisLabel"
+    [yAxisLabel]="yAxisLabel"
+    (select)="onSelect($event)">
+  </ngx-charts-bar-vertical>
+</div>
