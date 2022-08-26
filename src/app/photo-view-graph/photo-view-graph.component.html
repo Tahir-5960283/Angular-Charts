@@ -1,0 +1,16 @@
+
+<div class="photo-view-container">
+   
+    <div class="photo-view-graph">
+      <h3>Photo views</h3>
+      <p>Number of times of your business photo have been viewed</p>
+      <p>1 <strong>month</strong></p>
+      <ngx-charts-line-chart [view]="view" [scheme]="colorScheme" [legend]="legend" [showXAxisLabel]="showXAxisLabel"
+      [showYAxisLabel]="showYAxisLabel" [xAxis]="xAxis" [yAxis]="yAxis" [xAxisLabel]="xAxisLabel"
+      [yAxisLabel]="yAxisLabel" [timeline]="timeline" [results]="multi" (select)="onSelect($event)"
+      (activate)="onActivate($event)" (deactivate)="onDeactivate($event)">
+    </ngx-charts-line-chart>
+    </div>
+
+    
+</div>

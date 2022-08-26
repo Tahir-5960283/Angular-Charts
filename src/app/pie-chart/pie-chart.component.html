@@ -1,0 +1,18 @@
+
+<div class="pie-chart-container" >
+  <div class="para">
+    <h3>How customer search for your business</h3>
+    <p>1 <strong>month</strong></p>
+    <p>Total searches 1192</p>
+  </div>
+  <ngx-charts-advanced-pie-chart
+  [view]="view"
+  [scheme]="colorScheme"
+  [results]="single"
+  [gradient]="gradient"
+  (select)="onSelect($event)"
+  (activate)="onActivate($event)"
+  (deactivate)="onDeactivate($event)"
+  >
+</ngx-charts-advanced-pie-chart>
+</div>
