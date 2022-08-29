@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { DataService } from '../data.service';
+import { Reviews } from '../reviews';
 
 @Component({
   selector: 'app-main',
@@ -8,26 +9,34 @@ import { DataService } from '../data.service';
   providers: [DataService]
 })
 export class MainComponent implements OnInit {
-    
-  public reviewsData:any=[];
+  public currentPage = 1;
+  public pageSize = 5;
+  // public totalpages;
+  public reviewsData: any = [];
 
-  constructor(private dataService: DataService) { 
-   
+
+  constructor(private dataService: DataService) {
+
+
+
+
   }
 
   public ngOnInit(): void {
     this.dataService.AllReviewsData().subscribe(reviewsData => {
 
-      console.log('reviewsData:',reviewsData);
-      this.reviewsData =reviewsData;
-      console.log('reviewsData:',this.reviewsData);
+      console.log('reviewsData:', reviewsData);
+      this.reviewsData = reviewsData;
+      console.log('reviewsData:', this.reviewsData);
     });
   }
 
-  columns = [
-    { name: 'Show Name Here', prop: 'name' },
-    { name: 'show comment here', prop: 'comment' }
-   
-  ];
+  // columns = [
+  //   { name: 'Show Name Here', prop: 'name' },
+  //   { name: 'show comment here', prop: 'comment' }
 
+  // ];
+
+ 
 }
+

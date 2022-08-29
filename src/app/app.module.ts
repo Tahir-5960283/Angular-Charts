@@ -15,8 +15,9 @@ import { PieChartComponent } from './pie-chart/pie-chart.component';
 import { MainComponent } from './main/main.component';
 
 import { HttpClientModule } from '@angular/common/http';
+import {NgxPaginationModule} from 'ngx-pagination';
 import { NgxDatatableModule } from '@swimlane/ngx-datatable';
-
+import { CommonModule } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,9 @@ import { NgxDatatableModule } from '@swimlane/ngx-datatable';
     AppRoutingModule,
     NgxChartsModule,
     HttpClientModule,
-    NgxDatatableModule
+    NgxDatatableModule,
+    NgxPaginationModule,
+    CommonModule
     
       
    

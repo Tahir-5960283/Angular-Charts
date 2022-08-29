@@ -38,19 +38,28 @@
             <p>4.98★★★★★ .27 reviews </p>
         </div>
     </div>
-    <div class="Bottom-container">
-        <ngx-datatable 
-        [rows]="reviewsData" 
-        class="material" 
-        [columns]="columns"
-        [columnMode]="'force'" 
-        [headerHeight]="50" 
-        [footerHeight]="50" 
-        [rowHeight]="'auto'" >
+    <div class="bottom-container">
+        <ngx-datatable [rows]="reviewsData" class="material" [columnMode]="'force'" [headerHeight]="50" [limit]="5"
+            [footerHeight]="50" rowHeight="auto"  >
+           
+            <ngx-datatable-column name="name" >
+                <ng-template let-row="reviewsData" let-expanded="expanded" ngx-datatable-row-detail-template>
+                    <div><strong>Name</strong></div>
+                    <div >{{ reviewsData?.name }}</div>
+                </ng-template>
+            </ngx-datatable-column>
+
+            <ngx-datatable-column name="comment"  >
+                <ng-template #myTemplate let-row="reviewsData" let-expanded="expanded"
+                    ngx-datatable-row-detail-template>
+                    <div><strong>comment</strong></div>
+                    <div>{{ reviewsData?.comment }}</div>
+                </ng-template>
+            </ngx-datatable-column>
+
+
         </ngx-datatable>
-
-    <div>
-
+    </div>
 
 
 
@@ -65,9 +74,7 @@
 
 
 
-
-
-        <!-- <div class="p-row pb-3">
+    <!-- <div class="p-row pb-3">
             <div class="col Sphere flex-col ">
                 <h3 class="text-center">W</h3>
             </div>
@@ -125,16 +132,16 @@
 
             <div class="col wp-content">
                  <p class="icons" style="margin-left:30rem ;"> <i class="fa fa-reply"></i></p> -->
-        <!-- <p class="mb-0"><strong>Brenda Ludwig</strong></p>
+    <!-- <p class="mb-0"><strong>Brenda Ludwig</strong></p>
                 <p>The agent of Great Florida Insurance are by far the most professional,cost effective, and
                     attentive
                     representatives.I have ever had the pleasure to work with.We have recently move our instance
                     need to this office & look forword
                     continued relationship with both Michelle & Yomara .HIGHLY RECOMMIND </p> -->
-        <!-- </div> -->
+    <!-- </div> -->
 
-        <!-- </div> -->
-        <!-- <div class="p-row">
+    <!-- </div> -->
+    <!-- <div class="p-row">
             <nav class="navabr">
                 <ul class="pagination justify-content-end">
                     <li class="page-item disabled">
