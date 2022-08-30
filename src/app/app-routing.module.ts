@@ -10,12 +10,12 @@ import { ProgressGraphComponent } from './progress-graph/progress-graph.componen
 
 const routes: Routes = [
 
-  // { path: 'app-chart', component: ChartComponent },
-  // { path: 'app-graph-insights', component: GraphComponent },
+  { path: 'app-chart', component: ChartComponent },
+  { path: 'app-graph-insights', component: InsightsComponent },
   { path: 'customeractions', component:CustomerComponent },
-  // { path: 'app-progress-graph', component: ProgressGraphComponent },
-  // { path: 'app-photo-view-graph', component: PhotoViewGraphComponent },
-  // { path: 'pie-chart', component: PieChartComponent },
+  { path: 'app-progress-graph', component: ProgressGraphComponent },
+  { path: 'app-photo-view-graph', component: PhotoViewGraphComponent },
+  { path: 'pie-chart', component: PieChartComponent },
   { path: 'main', component: MainComponent }
 
 ];
