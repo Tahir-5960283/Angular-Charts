@@ -40,26 +40,80 @@
     </div>
     <div class="bottom-container">
         <ngx-datatable [rows]="reviewsData" class="material" [columnMode]="'force'" [headerHeight]="50" [limit]="5"
-            [footerHeight]="50" rowHeight="auto"  >
-           
-            <ngx-datatable-column name="name" >
-                <ng-template let-row="reviewsData" let-expanded="expanded" ngx-datatable-row-detail-template>
-                    <div><strong>Name</strong></div>
-                    <div >{{ reviewsData?.name }}</div>
+            [footerHeight]="50" rowHeight="auto" [columns]="columns">
+            <!-- [rowClass]="getRowClass" -->
+            <ngx-datatable-column [cellClass]="getCustomCell" headerClass="is-name">
+                <ng-template let-row="row" ngx-datatable-cell-template>
+                    <div class="datatable">
+                          <div class="col-md-1"><strong class="custom-heading Sphere text-center" style="align-items:center ;">{{ row?.name | slice:0:1}}</strong></div>  
+                          <div class="col-md-10"><strong class="custom-heading" >{{ row?.name}}</strong></div>  
+                          <div class="col-md-1"><h4 class="icons"><i class="fa fa-reply"></i></h4></div> 
+                    </div>
+                    <div class="text-start" style="margin-left:6rem;">
+                       <h6>{{ row?.comment}}</h6> 
+                    </div>
+
                 </ng-template>
             </ngx-datatable-column>
-
-            <ngx-datatable-column name="comment"  >
-                <ng-template #myTemplate let-row="reviewsData" let-expanded="expanded"
-                    ngx-datatable-row-detail-template>
-                    <div><strong>comment</strong></div>
-                    <div>{{ reviewsData?.comment }}</div>
-                </ng-template>
-            </ngx-datatable-column>
-
-
         </ngx-datatable>
     </div>
+
+ <!-- ..........// file uploader ..........// -->
+    <!-- <input type="file" (change)="onFileSelected($event)" /> -->
+    <!-- <br /><br /> -->
+
+ <!-- ..........// file uploader ..........// -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     <!-- <ng-template let-row="row" let-expanded="expanded" ngx-datatable-row-detail-template >
+                    <div><strong>Name</strong></div>
+                    <div >{{ reviewsData?.name }}</div>
+                </ng-template> -->
+            <!-- <ngx-datatable-column   headerClass="is-comment" [cellClass]="getCellClass" prop="comment" >
+                <ng-template #myTemplate let-row="reviewsData" let-expanded="expanded"
+                    ngx-datatable-row-detail-template>
+                    <div ><strong>comment</strong></div>
+                    <div>{{ reviewsData?.comment }}</div>
+                </ng-template>
+            </ngx-datatable-column> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

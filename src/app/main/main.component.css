@@ -19,16 +19,6 @@
     padding: 10px;
 }
 
-.Sphere {
-    position: absolute;
-    border-radius: 50%;
-    background-color: rgba(0, 0, 255, 0.0);
-    width: 4rem;
-    height: 4rem;
-    background: radial-gradient(circle at 50% 120%, #765aa7, #765aa7 10%, hsl(208, 93%, 30%) 80%, #2e0645 100%);
-    margin-top: 10px;
-
-}
 
 .wp-content {
     padding-left: 5rem;
@@ -72,25 +62,48 @@
 .button button {
     color: blue;
 }
-.datatable-body-row datatable-row-even{
-    border: 2px solid black;
+
+/deep/ .row-color {
+    display: flex;
+    flex-direction: row;
+    width: 0px;
+    height: auto    ;
+    /* background-color: green; */
+}
+.datatable{
+    display: flex;
+    flex-direction: row;
 }
 
+.custom-heading {
+    font-size:25px;
+}
+.icons{
+    color: gray;
+    margin-right: 20px
+}
+.Sphere {
+    position: absolute;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 255, 0.0);
+    width: 50px;
+    height: 50px;
+    background: radial-gradient(circle at 50% 120%, #765aa7, #765aa7 10%, hsl(208, 93%, 30%) 80%, #2e0645 100%);
+}
 
+/* /deep/ .is-col {
+    background-color: blue;
+}
+/deep/ .is-comment {
+    width: 100vh;
+    
+    border: 2px solid red;
+}
 
+ /deep/.is-name {
+    border: 2px solid blue;
 
-
-
-
-
-
-
-
-
-
-
-
-
+}  */
 
 /* 
 .main {
