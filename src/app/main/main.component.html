@@ -9,25 +9,36 @@
             <div class="content">
                 <div class="col-md-6 col-sm-6">
                     <div class="row">
-                        <p><strong>Address:</strong> LakesDr,FT.Myers,FL 33913,US</p>
-                    </div>
-                    <div class="row">
-                        <p><strong>Phone:</strong></p>
-                    </div>
-                    <div class="row">
-                        <p><strong>Category:</strong>Insurance agency</p>
-                    </div>
-                    <div class="row">
-                        <p><strong>Regular Hours:</strong>[object Object]-[object Object]</p>
-                    </div>
-                    <div class="row">
-                        <p><strong>Websites:</strong><br>
-
-                        </p>
-                        <div class="button">
-                            <button type="button" class="btn btn-light">EDIT</button>
+                        <div>
+                            <p class="center-text"><strong>Address:</strong> LakesDr,FT.Myers,FL 33913,US</p>
                         </div>
                     </div>
+                    <div class="row">
+                        <div>
+                            <p class="center-text"><strong>Phone:</strong></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div>
+                            <p class="center-text"><strong>Category:</strong>Insurance agency</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div>
+                            <p class="center-text"><strong>RegularHours:</strong>[object Object]-[object Object]</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="center-text">
+                            <p class="center-text"><strong>Websites:</strong></p>
+                        </div>
+                    </div>
+                    <!-- <div class="row"> -->
+
+                    <!-- </div> -->
+                </div>
+                <div class="button  center-text" style="margin-top:50px ;">
+                    <button type="button" class="btn btn-light">EDIT</button>
                 </div>
             </div>
         </div>
@@ -40,175 +51,112 @@
     </div>
     <div class="bottom-container">
         <ngx-datatable [rows]="reviewsData" class="material" [columnMode]="'force'" [headerHeight]="50" [limit]="5"
-            [footerHeight]="50" rowHeight="auto" [columns]="columns">
+            [footerHeight]="50" rowHeight="auto">
             <!-- [rowClass]="getRowClass" -->
-            <ngx-datatable-column [cellClass]="getCustomCell" headerClass="is-name">
+            <!-- [cellClass]="getCustomCell" headerClass="is-name" -->
+            <!-- [columns]="columns" -->
+            <ngx-datatable-column>
                 <ng-template let-row="row" ngx-datatable-cell-template>
-                    <div class="datatable">
-                          <div class="col-md-1"><strong class="custom-heading Sphere text-center" style="align-items:center ;">{{ row?.name | slice:0:1}}</strong></div>  
-                          <div class="col-md-10"><strong class="custom-heading" >{{ row?.name}}</strong></div>  
-                          <div class="col-md-1"><h4 class="icons"><i class="fa fa-reply"></i></h4></div> 
+                    <div style="border-bottom: 5px solid whitesmoke;">
+                        <div class="datatable">
+                            <div class="col-md-1"><strong class="custom-heading Sphere text-center">{{ row?.name |
+                                    slice:0:1}}</strong></div>
+                            <div class="col-md-10"><strong class="custom-headingname">{{ row?.name}}</strong></div>
+                            <div class="col-md-1">
+                                <h4 class="icons" (click)="showDialog(row)"><i class="fa fa-reply"></i></h4>
+                            </div>
+                        </div>
+                        <div class="text-start" style="margin-left:6.5rem;padding-right:10px;padding-right: 37px;">
+                            <h6>{{ row?.comment}}</h6>
+                        </div>
                     </div>
-                    <div class="text-start" style="margin-left:6rem;">
-                       <h6>{{ row?.comment}}</h6> 
-                    </div>
+
 
                 </ng-template>
             </ngx-datatable-column>
         </ngx-datatable>
     </div>
 
- <!-- ..........// file uploader ..........// -->
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">modal-dialog</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row">
+                            <div style="border:4px solid whitesmoke ;" *ngFor="let data of newData">
+                                <strong>Name:</strong>
+                                <p>{{data?.name}}</p>
+                                <strong>Comment:</strong>
+                                <p>{{data.comment}}</p>
+                            </div>
+                            <div style="border:4px solid whitesmoke ;margin-top: 10px;">
+                                <div style="margin-top:10px;">
+                                    <input type="text" class="form-control" id="floatingInputGrid" style="height: 100px"
+                                        placeholder="please enter your comments">
+                                </div>
+                                <div class="text-right" style="margin-top:10px;padding:5px ;">
+                                    <button type="button" class="btn btn-primary" style="width:100% ;">Reply</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"
+                        (click)="onCloseDialog()">Close</button>
+                    <button type="button" class="btn btn-primary" (click)="onSaveDialog()">Save changes</button>
+                </div> -->
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- ..........// file uploader ..........// -->
     <!-- <input type="file" (change)="onFileSelected($event)" /> -->
     <!-- <br /><br /> -->
 
- <!-- ..........// file uploader ..........// -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-     <!-- <ng-template let-row="row" let-expanded="expanded" ngx-datatable-row-detail-template >
+    <!-- ..........// file uploader ..........// -->
+    <!-- <ng-template let-row="row" let-expanded="expanded" ngx-datatable-row-detail-template >
                     <div><strong>Name</strong></div>
                     <div >{{ reviewsData?.name }}</div>
                 </ng-template> -->
-            <!-- <ngx-datatable-column   headerClass="is-comment" [cellClass]="getCellClass" prop="comment" >
+    <!-- <ngx-datatable-column   headerClass="is-comment" [cellClass]="getCellClass" prop="comment" >
                 <ng-template #myTemplate let-row="reviewsData" let-expanded="expanded"
                     ngx-datatable-row-detail-template>
                     <div ><strong>comment</strong></div>
                     <div>{{ reviewsData?.comment }}</div>
                 </ng-template>
             </ngx-datatable-column> -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <!-- <div class="p-row pb-3">
-            <div class="col Sphere flex-col ">
-                <h3 class="text-center">W</h3>
-            </div>
-
-            <div class="col wp-content">
-                <p class="mb-0"><strong>W S Roethke</strong></p>
-                <p>yomara went out of her way to find the right coverage at the right price.I would highly
-                    recommended her and
-                    Michelle.</p>
-            </div>
-
-        </div>
-
-        <div class="p-row pb-3">
-            <div class="col Sphere flex-col mb-0">
-                <h3 class="text-center">S</h3>
-            </div>
-
-            <div class="col wp-content">
-                <p class="mb-0"><strong> Sonya Walker</strong></p>
-                <p>Excellent and prompt service from Yomara!She's is the best!.</p>
-            </div>
-
-        </div>
-
-        <div class="p-row pb-3">
-            <div class="col Sphere flex-col mb-0">
-                <h3 class="text-center">S</h3>
-            </div>
-
-            <div class="col wp-content">
-                <p class="mb-0"><strong>Steve Bell</strong></p>
-                <p>Great Place.Michelle and Yomara find you good product at reasonable prices.</p>
-            </div>
-
-        </div>
-        <div class="p-row pb-3">
-            <div class="col Sphere flex-col mb-0">
-                <h3 class="text-center">B</h3>
-            </div>
-
-            <div class="col wp-content">
-                <p class="mb-0"><strong>Brenda Ludwig</strong></p>
-                <p>yomara was very courteous and went above and beyond to get my auto Insurance coverage
-                    established.I highly
-                    recommend.</p>
-            </div>
-
-        </div>
-
-        <div class="p-row pb-3">
-            <div class="col Sphere flex-col mb-0">
-                <h3 class="text-center">A</h3>
-            </div>
-
-            <div class="col wp-content">
-                 <p class="icons" style="margin-left:30rem ;"> <i class="fa fa-reply"></i></p> -->
-    <!-- <p class="mb-0"><strong>Brenda Ludwig</strong></p>
-                <p>The agent of Great Florida Insurance are by far the most professional,cost effective, and
-                    attentive
-                    representatives.I have ever had the pleasure to work with.We have recently move our instance
-                    need to this office & look forword
-                    continued relationship with both Michelle & Yomara .HIGHLY RECOMMIND </p> -->
-    <!-- </div> -->
-
-    <!-- </div> -->
-    <!-- <div class="p-row">
-            <nav class="navabr">
-                <ul class="pagination justify-content-end">
-                    <li class="page-item disabled">
-                        <a class="page-link" href="#" tabindex="-1">Previous</a>
-                    </li>
-                    <li class="page-item"><a class="page-link" href="#">1</a></li>
-                    <li class="page-item"><a class="page-link" href="#">2</a></li>
-                    <li class="page-item"><a class="page-link" href="#">3</a></li>
-                    <li class="page-item">
-                        <a class="page-link" href="#">Next</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </div>
-</div> -->

@@ -18,6 +18,9 @@ import { HttpClientModule } from '@angular/common/http';
 import {NgxPaginationModule} from 'ngx-pagination';
 import { NgxDatatableModule } from '@swimlane/ngx-datatable';
 import { CommonModule } from '@angular/common';
+import {DialogModule} from 'primeng/dialog';
+
+
 
 @NgModule({
   declarations: [
@@ -38,7 +41,8 @@ import { CommonModule } from '@angular/common';
     HttpClientModule,
     NgxDatatableModule,
     NgxPaginationModule,
-    CommonModule
+    CommonModule,
+    DialogModule
     
       
    
