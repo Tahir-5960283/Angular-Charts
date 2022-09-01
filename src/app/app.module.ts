@@ -2,8 +2,8 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgxChartsModule } from '@swimlane/ngx-charts';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
-
+import{HttpClientModule} from '@angular/common/http';
+import { NgxDatatableModule } from '@swimlane/ngx-datatable';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ChartComponent } from './chart/chart.component';
@@ -13,13 +13,6 @@ import { ProgressGraphComponent } from './progress-graph/progress-graph.componen
 import { PhotoViewGraphComponent } from './photo-view-graph/photo-view-graph.component';
 import { PieChartComponent } from './pie-chart/pie-chart.component';
 import { MainComponent } from './main/main.component';
-
-import { HttpClientModule } from '@angular/common/http';
-import {NgxPaginationModule} from 'ngx-pagination';
-import { NgxDatatableModule } from '@swimlane/ngx-datatable';
-import { CommonModule } from '@angular/common';
-import {DialogModule} from 'primeng/dialog';
-
 
 
 @NgModule({
@@ -39,10 +32,7 @@ import {DialogModule} from 'primeng/dialog';
     AppRoutingModule,
     NgxChartsModule,
     HttpClientModule,
-    NgxDatatableModule,
-    NgxPaginationModule,
-    CommonModule,
-    DialogModule
+    NgxDatatableModule
     
       
    

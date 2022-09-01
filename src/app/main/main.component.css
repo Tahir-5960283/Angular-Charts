@@ -1,78 +1,13 @@
-.main {
-    border: 2px solid gainsboro;
-    width: 25vw;
-    height: 30vh;
-    padding: 10px;
 
-}
-
-.main img {
-    width: 100%;
-    height: 100%;
-
-
-}
-
-.content {
-    border: 2px solid gainsboro;
-    width: 37vw;
-    padding: 10px;
-}
-
-
-.wp-content {
-    padding-left: 5rem;
-
-}
 
 .text-center {
-    /* color: white;
-    margin-top: 10px; */
     margin-left: 20px;
     padding: 5px;
-}
-
-.Bottom-container {
-    border: 2px solid gainsboro;
-}
-
-.container {
-    margin-top: 50px;
-}
-
-.p-row {
-    border: 2px solid gainsboro;
-    padding-left: 10px;
-
-}
-
-.Top-container-content {
-
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    /* justify-content: left; */
-    flex-wrap: initial;
-    width: 100%;
-
-}
-
-.reviews {
-    margin-top: 50px;
 }
 
 .button button {
     color: blue;
 }
-
-/deep/ .row-color {
-    display: flex;
-    flex-direction: row;
-    width: 0px;
-    height: auto;
-    /* background-color: green; */
-}
-
 .datatable {
     display: flex;
     flex-direction: row;
@@ -116,120 +51,34 @@
 .center-text {
     padding-left: 10px;
 
-
 }
-.row{
+
+.row {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* /deep/ .is-col {
-    background-color: blue;
-}
-/deep/ .is-comment {
-    width: 100vh;
-    
-    border: 2px solid red;
-}
-
- /deep/.is-name {
-    border: 2px solid blue;
-
-}  */
-
-/* 
-.main {
-    border: 2px solid gainsboro;
-    width: 25vw;
-    height: 30vh
-}
-
-.main img {
-    width:100%;
-    height: 100%; */
-/* padding-left: 5px; */
-/* margin-right: 10px;
-    margin-left: 10px; */
-
-
-/* }/ */
-/*  */
-/* .content {
-    border: 2px solid gainsboro;
-    width: 37vw; */
-/* padding-left: 20px; */
-/* height: auto; */
-/* } */
-
-/* .Sphere {
-    position: absolute;
-    border-radius: 50%;
-    background-color: rgba(0, 0, 255, 0.0);
-    width: 4rem;
-    height: 4rem;
-    background: radial-gradient(circle at 50% 120%, #818df6, #768cef 10%, hsl(208, 93%, 30%) 80%, #2e0645 100%);
-    margin-top: 10px;
-
-} */
-
-/* .wp-content { */
-/* padding-left:70px ; */
-
-/* margin-left: 4.5rem; */
-/* } */
-
-/* .text-center {
-    color: white;
-    margin-top: 10px;
-} */
-
-/* .Bottom-container { */
-/* width: 64.5vw; */
-/* border: 2px solid gainsboro; */
-
-/* margin-left: 4.5rem; */
-/* } */
-
-/* .Top-container { */
-/* margin-top: 50px; */
-/* width: 64vw; */
-/* margin-left: 5rem; */
-/* } */
-
-/* .container {
-    margin: 30px;
-} */
-/* 
-.p-row {
-    border: 2px solid gainsboro;
-} */
-
-/* .Top-container-content {
-
+.top-content{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    /* justify-content: left; */
-/* flex-wrap: initial; */
-/* width: 100%; */
-
-/* } */
-
-/* .reviews {
-    margin-top: 50px;
-} */
+    padding: 20px;
+}
+.images{
+    border: 1px solid gainsboro;
+    padding: 5px;
+   
+}
+.DataContent{
+    border: 1px solid gainsboro;
+    padding: 5px;
+   margin-left:30px;
+}
+.reviews{
+    margin-top: 20px;
+}
+.bottom-container{
+    margin-top: 20px;
+}

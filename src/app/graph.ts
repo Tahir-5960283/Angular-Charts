@@ -5,44 +5,44 @@ export var multi = [
     "name": "Listening on Search",
     "series": [
       {
-        "value": 0,
+        "value": 15,
         "name": "09-07-2022"
       },
       {
-        "value": 0,
+        "value": 10,
         "name": "10-07-2022"
       },
       {
-        "value": 5,
+        "value": 38,
         "name": "11-07-2022"
       },
       {
-        "value": 15,
+        "value": 35,
         "name": "12-07-2022"
       },
       {
-        "value": 45,
+        "value": 42,
         "name":"13-07-2022"
       },
 
       {
-        "value": 10,
+        "value": 45,
         "name": "14-07-2022"
       },
       {
-        "value": 40,
+        "value": 30,
         "name": "15-07-2022"
       },
       {
-        "value": 18,
+        "value": 20,
         "name": "16-07-2022"
       },
       {
-        "value": 15,
+        "value": 5,
         "name": "17-07-2022"
       },
       {
-        "value": 0,
+        "value": 90,
         "name": "18-07-2022"
       },
       {
@@ -50,7 +50,7 @@ export var multi = [
         "name": "19-07-2022"
       },
       {
-        "value": 30,
+        "value": 50,
         "name": "20-07-2022"
       },
       {
@@ -58,64 +58,68 @@ export var multi = [
         "name": "21-07-2022"
       },
       {
-        "value": 15,
+        "value": 30,
         "name": "22-07-2022"
       },
       {
-        "value": 30,
+        "value": 5,
         "name": "23-07-2022"
       },
       {
-        "value": 12,
+        "value": 5,
         "name": "24-07-2022"
       },
       {
-        "value": 38,
+        "value": 70,
         "name": "25-07-2022"
       },
       {
-        "value": 18,
+        "value": 30,
         "name": "26-07-2022"
       },
       {
-        "value": 10,
+        "value": 35,
         "name": "27-07-2022"
       },
       {
-        "value": 19,
+        "value": 25,
         "name": "28-07-2022"
       },
       {
-        "value": 45,
+        "value": 18,
         "name": "29-07-2022"
       },
       {
-        "value": 5,
+        "value": 25,
         "name": "30-07-2022"
       },
       {
-        "value": 2,
+        "value": 10,
         "name": "31-07-2022"
       },
       {
-        "value": 39,
+        "value": 30,
         "name": "01-08-2022"
       },
       {
-        "value": 5,
+        "value": 35,
         "name": "02-08-2022"
       },
       {
-        "value": 7,
+        "value": 62,
         "name": "03-08-2022"
       },
       {
-        "value": 32,
+        "value": 40,
         "name": "04-08-2022"
       },
       {
-        "value": 10,
+        "value": 50,
         "name": "05-08-2022"
+      },
+      {
+        "value": 0,
+        "name":  "06-08-2022"
       },
       {
         "value": 0,
@@ -129,47 +133,51 @@ export var multi = [
   "name": "Listening on Maps",
   "series": [
     {
-      "value": 15,
+      "value": 0,
       "name": "09-07-2022"
     },
     {
-      "value": 10,
+      "value": 0,
       "name": "10-07-2022"
     },
     {
-      "value": 37,
+      "value": 2,
       "name": "11-07-2022"
     },
     {
-      "value": 34,
+      "value": 10,
       "name": "12-07-2022"
     },
     {
-      "value": 45,
+      "value": 50,
       "name":"13-07-2022"
     },
     {
-      "value": 50,
+      "value": 5,
       "name": "14-07-2022"
     },
     {
-      "value": 22,
+      "value": 40,
+      "name": "15-07-2022"
+    },
+    {
+      "value": 18,
       "name": "16-07-2022"
     },
     {
-      "value": 10,
+      "value": 15,
       "name": "17-07-2022"
     },
     {
-      "value": 90,
+      "value": 0,
       "name": "18-07-2022"
     },
     {
-      "value": 90,
+      "value": 10,
       "name": "19-07-2022"
     },
     {
-      "value": 45,
+      "value": 30,
       "name": "20-07-2022"
     },
 
@@ -178,69 +186,73 @@ export var multi = [
       "name": "21-07-2022"
     },
     {
-      "value": 30,
+      "value": 15,
       "name":"22-07-2022"
     },
     {
-      "value":5,
+      "value":30,
       "name": "23-07-2022"
     },
     {
-      "value": 5,
+      "value": 10,
       "name": "24-07-2022"
     },
     {
-      "value":65,
+      "value":37,
       "name": "25-07-2022"
     },
     {
-      "value": 30,
+      "value": 15,
       "name": "26-07-2022"
     },
     {
-      "value": 35,
+      "value": 10,
       "name": "27-07-2022"
     },
 
     {
-      "value": 25,
+      "value": 20,
       "name": "28-07-2022"
     },
     {
-      "value": 18,
+      "value": 43,
       "name": "29-07-2022"
     },
     {
-      "value": 25,
+      "value": 5,
       "name": "30-07-2022"
     },
     {
-      "value":10,
+      "value":2,
       "name": "31-07-2022"
     },
     {
-      "value": 50,
+      "value": 39,
       "name": "01-08-2022"
     },
     {
-      "value":35,
+      "value":5,
       "name":"02-08-2022"
     },
     {
-      "value":63,
+      "value":7,
       "name": "03-08-2022"
     },
     {
-      "value": 40,
+      "value": 30,
       "name": "04-08-2022"
     },
     {
-      "value": 45,
+      "value": 10,
       "name":  "05-08-2022"
+    },
+    {
+      "value": 0,
+      "name":  "06-08-2022"
     },
     
     {
-      "value": 25,
+      "value":0,
       "name": "07-08-2022"
     },
 

@@ -26,7 +26,8 @@ export var multi = [
 
       {
         "value": 3,
-        "name": "14-07-2022"
+        "name": "14-07-2022",
+        "color": "black"
       },
       {
         "value": 1,
@@ -61,7 +62,10 @@ export var multi = [
         "value": 1,
         "name": "22-07-2022"
       },
-
+      {
+        "value": 0,
+        "name": "23-07-2022"
+      },
       {
         "value": 0,
         "name": "24-07-2022"
@@ -190,6 +194,10 @@ export var multi = [
         "value": 0,
         "name": "22-07-2022"
       },
+      {
+        "value": 0,
+        "name": "23-07-2022"
+      },
 
       {
         "value": 0,
@@ -316,7 +324,10 @@ export var multi = [
         "value": 2,
         "name": "22-07-2022"
       },
-
+      {
+        "value": 0,
+        "name": "23-07-2022"
+      },
       {
         "value": 0,
         "name": "24-07-2022"

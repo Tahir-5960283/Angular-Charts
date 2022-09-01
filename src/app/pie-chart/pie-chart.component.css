@@ -1,8 +1,43 @@
-.pie-chart-container{
-    margin-top: 50px;
+.container {
+    background-color: #ffffff;
+    width: 60vw;
+    height:60vh;
+    border: 2px solid blanchedalmond;
+    padding: 20px;
+}
+
+.Bluebox {
+    background-color: blue;
+    border: 1px solid blue;
+    padding: 5px;
+    width: 15px;
+    color: blue;
+    height: 10px;
+}
+
+.Greenbox {
+    background-color: green;
+    border: 1px solid green;
+    padding: 5px;
+    width: 15px;
+    color: green;
+    height: 10px;
+}
+
+.box-row {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.p-size {
+    font-size: 15px;
+}
+.hi-container {
+    background-color: aqua;
+
     margin-left: auto;
     margin-right: auto;
-}
-.para{
-    padding-left: 50px;
+    border: 2px solid blanchedalmond;
+    margin-top: 50px;
 }

@@ -9,7 +9,7 @@ import { multi } from '../photo-view-graph';
 export class PhotoViewGraphComponent implements OnInit {
 
   public multi!: any[];
-  view: any[] = [1200, 600];
+  view: any[] = [1200, 700];
 
   // options
   legend: boolean = true;
@@ -24,7 +24,7 @@ export class PhotoViewGraphComponent implements OnInit {
   timeline: boolean = true;
 
   colorScheme: any = {
-    domain: ['#4488f3', '#cf4543','#fffdfb','#ffffff']
+    domain: ['#4688f6', '#bd5752']
   };
 
 

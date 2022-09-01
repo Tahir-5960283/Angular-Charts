@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { AfterViewInit, Component, OnInit } from '@angular/core';
+import { AreaChartComponent, AreaChartSeries } from '@swimlane/ngx-charts';
+
 // import { multi } from '../data';
 import { multi } from '../graph';
 @Component({
@@ -6,9 +8,9 @@ import { multi } from '../graph';
   templateUrl: './insights.component.html',
   styleUrls: ['./insights.component.css']
 })
-export class InsightsComponent implements OnInit {
+export class InsightsComponent implements OnInit, AfterViewInit {
 
- 
+
   public multi!: any[];
   view: any[] = [1200, 600];
 
@@ -21,12 +23,12 @@ export class InsightsComponent implements OnInit {
   yAxis: boolean = true;
   showYAxisLabel: boolean = true;
   showXAxisLabel: boolean = true;
-  xAxisLabel: string ='';
-  yAxisLabel: string ='';
+  xAxisLabel: string = '';
+  yAxisLabel: string = '';
   timeline: boolean = true;
 
   colorScheme: any = {
-    domain: ['#e37224','#e84643']
+    domain: ['#fbe9dd', '#f9dad5']
   };
 
 
@@ -34,6 +36,30 @@ export class InsightsComponent implements OnInit {
     Object.assign(this, { multi });
 
   }
+  public ngOnInit(): void {
+  }
+
+  private setSeriesBorder(seriesIndex: number, borderColor: string) {
+    //:nth-child(1)
+    var seriesSelector = document.querySelectorAll('.area-chart-container-2 [ngx-charts-area-series]') || null;
+    if (seriesSelector && seriesSelector.length > seriesIndex) {
+      var series = seriesSelector[seriesIndex];
+      if (series) {
+        (<any>series).style.stroke = borderColor;
+      }
+    }
+  }
+
+
+  public ngAfterViewInit() {
+    setTimeout(() => {
+      this.setSeriesBorder(0, 'rgb(230, 89, 23)');
+      this.setSeriesBorder(1, 'red');
+
+    }, 0);
+
+  }
+
 
   onSelect(data: any): void {
     console.log('Item clicked', JSON.parse(JSON.stringify(data)));
@@ -48,9 +74,5 @@ export class InsightsComponent implements OnInit {
   }
 
 
-  public ngOnInit(): void {
-  }
-
-  
 
 }

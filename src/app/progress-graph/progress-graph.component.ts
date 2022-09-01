@@ -12,7 +12,7 @@ export class ProgressGraphComponent  {
  public single!: any[];
  public  multi!: any[];
 
-  view: any[] = [1200, 600];
+ view: any[] = [1200, 700];
 
   // options
   showXAxis = true;
@@ -25,7 +25,7 @@ export class ProgressGraphComponent  {
   yAxisLabel = '';
 
   colorScheme = {
-    domain: ['#4588f1', '#4588f1', '#4588f1', '#4588f1']
+    domain: ['#4588f1']
   };
 
   constructor() {

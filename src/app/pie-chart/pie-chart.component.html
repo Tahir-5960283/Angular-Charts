@@ -1,18 +1,72 @@
-
-<div class="pie-chart-container" >
-  <div class="para">
-    <h3>How customer search for your business</h3>
-    <p>1 <strong>month</strong></p>
-    <p>Total searches 1192</p>
+<div class="container" style="margin-top:70px ;">
+  <div class="row">
+    <div class="col-sm-3" style="margin-top:25px ;">
+      <div class="para">
+        <p class="p-size">How customer search for your business</p>
+        <p>1 <strong>month</strong></p>
+        <p>Total searches 1192</p>
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <div class="row">
+        <div class="col-4 col-sm-6">
+          <div>
+            <ngx-charts-advanced-pie-chart [view]="view" [scheme]="colorScheme" [results]="single" [gradient]="gradient"
+              class="advanced-pie-chart" (select)="onSelect($event)" (activate)="onActivate($event)"
+              (deactivate)="onDeactivate($event)">
+            </ngx-charts-advanced-pie-chart>
+          </div>
+        </div>
+        <!-- <div class="col-8 col-sm-6">
+  
+          </div> -->
+      </div>
+    </div>
+    <div class="col-sm-3" style="margin-top:70px ;">
+      <div class="d-flex flex-row justify-content-start" style="align-items: center;">
+        <div class="Greenbox"></div>
+        <h3>Discovery</h3>
+      </div>
+      <p class="p-size">Customer who find your listening searching for a category, product, or service</p>
+      <div class="d-flex flex-row justify-content-start" style="align-items: center">
+        <div class="Bluebox"></div>
+        <h3>Direct</h3>
+      </div>
+      <p class="p-size">Customer who find your listening searching for your business name or address </p>
+    </div>
   </div>
-  <ngx-charts-advanced-pie-chart
-  [view]="view"
-  [scheme]="colorScheme"
-  [results]="single"
-  [gradient]="gradient"
-  (select)="onSelect($event)"
-  (activate)="onActivate($event)"
-  (deactivate)="onDeactivate($event)"
-  >
-</ngx-charts-advanced-pie-chart>
 </div>
+
+
+
+
+
+<!--   
+  <div class="row d-flex flex-col justify-content-center" style="background-color:gainsboro;margin-top: 50px;">
+    <div class="col-sm-9">
+        <div class="para">
+          <p class="p-size">How customer search for your business</p>
+        <p>1 <strong>month</strong></p>
+        <p>Total searches 1192</p>
+      </div>
+      <div class="row">
+        <div class="col-8 col-sm-6">
+          <ngx-charts-advanced-pie-chart [view]="view" [scheme]="colorScheme" [results]="single" [gradient]="gradient" class="advanced-pie-chart"
+          (select)="onSelect($event)" (activate)="onActivate($event)" (deactivate)="onDeactivate($event)">
+        </ngx-charts-advanced-pie-chart>
+        </div>
+        <div class="col-4 col-sm-6">
+          <div class="d-flex flex-row justify-content-start" style="align-items: center;">
+            <div class="Greenbox"></div>
+            <h3 >Discovery</h3>
+          </div>
+          <p class="p-size">Customer who find your listening searching for a category, product, or service</p>
+          <div class="d-flex flex-row justify-content-start"  style="align-items: center">
+            <div class="Bluebox"></div>
+            <h3 >Direct</h3>
+          </div>
+          <p class="p-size">Customer who find your listening searching for your business name or address </p>
+        </div>
+        </div>
+      </div>
+    </div> -->
