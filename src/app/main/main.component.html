@@ -1,68 +1,68 @@
 <div class="container">
-            <div class="top-content" >
-                <div class="images" >
-                    <img src="http://thenewsonline.in/wp-content/uploads/2021/10/ind-fe-3.jpg" width="280px"  >
+    <div class="top-content">
+        <div class="images">
+            <img src="http://thenewsonline.in/wp-content/uploads/2021/10/ind-fe-3.jpg" width="280px">
+        </div>
+        <div class="DataContent flex-grow-1">
+            <div class="row">
+                <div>
+                    <p class="center-text"><strong>Address:</strong> LakesDr,FT.Myers,FL 33913,US</p>
                 </div>
-                <div class="DataContent flex-grow-1">
-                    <div class="row">
-                        <div>
-                            <p class="center-text"><strong>Address:</strong> LakesDr,FT.Myers,FL 33913,US</p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div>
-                            <p class="center-text"><strong>Phone:</strong></p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div>
-                            <p class="center-text"><strong>Category:</strong>Insurance agency</p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div>
-                            <p class="center-text"><strong>RegularHours:</strong>[object Object]-[object Object]</p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="center-text">
-                            <p class="center-text"><strong>Websites:</strong></p>
-                        </div>
-                    </div>
-                    <div class="button  center-text" style="margin-top:50px ;">
-                        <button type="button" class="btn btn-light" (click)="onShowEditDialog()">EDIT</button>
-                    </div>
+            </div>
+            <div class="row">
+                <div>
+                    <p class="center-text"><strong>Phone:</strong></p>
                 </div>
+            </div>
+            <div class="row">
+                <div>
+                    <p class="center-text"><strong>Category:</strong>Insurance agency</p>
+                </div>
+            </div>
+            <div class="row">
+                <div>
+                    <p class="center-text"><strong>RegularHours:</strong>[object Object]-[object Object]</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="center-text">
+                    <p class="center-text"><strong>Websites:</strong></p>
+                </div>
+            </div>
+            <div class="button  center-text" style="margin-top:50px ;">
+                <button type="button" class="btn btn-light" (click)="onShowEditDialog()">EDIT</button>
+            </div>
+        </div>
 
-            </div>
-            <div class="row reviews">
-                <div class="col-md-12">
-                    <p><strong>Reviews</strong></p>
-                    <p>4.98★★★★★ .27 reviews </p>
-                </div>
-            </div>
-            <div class="bottom-container">
-                <ngx-datatable [rows]="reviewsData" class="material" [columnMode]="'force'" [limit]="5" [footerHeight]="50"
-                    rowHeight="auto">
-                    <ngx-datatable-column>
-                        <ng-template let-row="row" ngx-datatable-cell-template>
-                            <div style="border-bottom: 5px solid whitesmoke;">
-                                <div class="datatable">
-                                    <div class="col-md-1"><strong class="custom-heading Sphere text-center">{{ row?.name |
-                                            slice:0:1}}</strong></div>
-                                    <div class="col-md-10"><strong class="custom-headingname">{{ row?.name}}</strong></div>
-                                    <div class="col-md-1">
-                                        <h4 class="icons" (click)="showDialog(row)"><i class="fa fa-reply"></i></h4>
-                                    </div>
-                                </div>
-                                <div class="text-start" style="margin-left:6.5rem;padding-right:10px;padding-right: 37px;">
-                                    <h6>{{ row?.comment}}</h6>
-                                </div>
+    </div>
+    <div class="row reviews">
+        <div class="col-md-12">
+            <p><strong>Reviews</strong></p>
+            <p>4.98★★★★★ .27 reviews </p>
+        </div>
+    </div>
+    <div class="bottom-container">
+        <ngx-datatable [rows]="reviewsData" class="material" [columnMode]="'force'" [limit]="5" [footerHeight]="50"
+            rowHeight="auto">
+            <ngx-datatable-column>
+                <ng-template let-row="row" ngx-datatable-cell-template>
+                    <div style="border-bottom: 5px solid whitesmoke;">
+                        <div class="datatable">
+                            <div class="col-md-1"><strong class="custom-heading Sphere text-center">{{ row?.name |
+                                    slice:0:1}}</strong></div>
+                            <div class="col-md-10"><strong class="custom-headingname">{{ row?.name}}</strong></div>
+                            <div class="col-md-1">
+                                <h4 class="icons" (click)="showDialog(row)"><i class="fa fa-reply"></i></h4>
                             </div>
-                        </ng-template>
-                    </ngx-datatable-column>
-                </ngx-datatable>
-            </div>
+                        </div>
+                        <div class="text-start" style="margin-left:6.5rem;padding-right:10px;padding-right: 37px;">
+                            <h6>{{ row?.comment}}</h6>
+                        </div>
+                    </div>
+                </ng-template>
+            </ngx-datatable-column>
+        </ngx-datatable>
+    </div>
 </div>
 
 
@@ -112,12 +112,74 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
+                <div class="p-field ">
+                    <div class="mb-3">
+                        <label for="Address" class="form-group" class="form-label"><strong>Address:</strong></label>
+                        <input id="Address" class="form-control p-3 mt-2" type="Address"
+                            placeholder="Please enter your Address" pInputText />
+                    </div>
+                    <div class="mb-3">
+                        <label for="Mobile Number" class="form-group"><strong>Mobile Number:(primary)</strong></label>
+                        <input id="Mobilenumber" class="form-control p-3 mt-2" type="Mobilenumber"
+                            placeholder="Please enter your Mobile Number" pInputText />
+                    </div>
+                    <div class="mb-3">
 
+                        <label for="Phone Number" class="form-group"><strong>Phone Number:</strong></label>
+                        <input id="Phonenumber" class="form-control p-3 mt-2" type="Phonenumber"
+                            placeholder="Please enter your Phone Number" pInputText />
+                    </div>
+                    <div class="grid">
+                        <div class="d-flex">
+                            <div class="col-md-4">
+                                <label for="RegularHours"><strong>(from)RegularHours:</strong></label>
+                            </div>
+                            <div class="col-md-4" style="margin-top:20px;padding: 5px;align-items: center;">
+                                <label for="Hours"><strong>Hours:</strong></label>
+                                <p-dropdown [options]="StartTimes" optionLabel="name"></p-dropdown>
+                            </div>
+                            <div class="col-md-4 ">
+                                <label for="Minutes"><strong>Minutes:</strong></label>
+                                <p-dropdown [options]="ClosedTimes" optionLabel="name"></p-dropdown>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid mt-3">
+                        <div class="d-flex">
+                            <div class="col-md-4 ">
+                                <label for="RegularHours"><strong>(To):RegularHours:</strong></label>
+                            </div>
+                            <div class="col-md-4" style="margin-top:20px ;padding: 5px;">
+                                <label for="Hours"><strong>Hours:</strong></label>
+                                <p-dropdown [options]="StartTimes" optionLabel="name"></p-dropdown>
+                            </div>
+                            <div class="col-md-4">
+                                <label for="Minutes"><strong>Minutes:</strong></label>
+                                <p-dropdown [options]="ClosedTimes" optionLabel="name"></p-dropdown>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class=" mt-3 d-flex">
+                        <div>
+                            <label for="Category"><strong>Category:</strong></label>
+                        </div>
+                        <div style="margin-left:10px">
+                            <p-dropdown class="form-control p-3 mt-2" type="Category" width="100%"
+                                placeholder="Please select your Category" optionLabel="name" [options]="category">
+                            </p-dropdown>
+                        </div>
+
+                    </div>
+                    <div class="mt-3">
+                        <label for="Websites" class="form-group"><strong>Websites:</strong></label>
+                        <input id="Websites" class="form-control p-3 mt-2" type="url"
+                            placeholder="Please enter your Websites" pInputText />
+                    </div>
+
+                </div>
             </div>
-            <!-- <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
-        </div> -->
+
         </div>
     </div>
 </div>
@@ -134,12 +196,12 @@
 
 
 
-   <!-- <div class="col-md-6 col-sm-6 ">
+<!-- <div class="col-md-6 col-sm-6 ">
             <div class="main">
                 <img src="http://thenewsonline.in/wp-content/uploads/2021/10/ind-fe-3.jpg">
             </div>
         </div> -->
-        <!-- <div class="content">
+<!-- <div class="content">
             <div class="col-md-6 col-sm-6">
                 <div class="row">
                     <div>
@@ -171,3 +233,45 @@
                 <button type="button" class="btn btn-light" (click)="onShowEditDialog()">EDIT</button>
             </div>
         </div> -->
+
+
+
+
+
+
+<!-- <div class="mb-2">
+                       <div class="p-1row">
+                        <div class="col-md-6">
+                            <div class="row">
+                                <div>
+                                    <label for="RegularHours"><strong>(from):RegularHours</strong></label>
+                                </div>
+                                <div>
+                                    <label for="Hours"><strong>Hours:</strong></label>
+                                    <p-dropdown [options]="StartTimes" optionLabel="name"></p-dropdown>
+                                </div>
+                                <div>
+                                    <label for="Minutes"><strong>Minutes:</strong></label>
+                                    <p-dropdown [options]="ClosedTimes" optionLabel="name"></p-dropdown>
+                                </div>
+                            </div>
+                          
+                        </div>
+                              <div class="col-md-6">
+                                <div class="row">
+                                    <div>
+                                        <label for="RegularHours"><strong>(To):RegularHours</strong></label>
+                                    </div>
+                                    <div>
+                                        <label for="Hours"><strong>Hours:</strong></label>
+                                        <p-dropdown [options]="StartTimes" optionLabel="name"></p-dropdown>
+                                    </div>
+                                    <div>
+                                        <label for="Minutes"><strong>Minutes:</strong></label>
+                                        <p-dropdown [options]="ClosedTimes" optionLabel="name"></p-dropdown>
+                                    </div>
+                                </div>
+                              </div>
+                       </div>
+                      
+                    </div> -->

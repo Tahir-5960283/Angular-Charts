@@ -5,6 +5,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import{HttpClientModule} from '@angular/common/http';
 import { NgxDatatableModule } from '@swimlane/ngx-datatable';
 import { AppRoutingModule } from './app-routing.module';
+import {InputTextModule} from 'primeng/inputtext';
+import {DropdownModule} from 'primeng/dropdown';
+
 import { AppComponent } from './app.component';
 import { ChartComponent } from './chart/chart.component';
 import { InsightsComponent } from './insights/insights.component';
@@ -32,7 +35,8 @@ import { MainComponent } from './main/main.component';
     AppRoutingModule,
     NgxChartsModule,
     HttpClientModule,
-    NgxDatatableModule
+    NgxDatatableModule,
+    DropdownModule
     
       
    
