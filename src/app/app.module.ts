@@ -16,6 +16,7 @@ import { ProgressGraphComponent } from './progress-graph/progress-graph.componen
 import { PhotoViewGraphComponent } from './photo-view-graph/photo-view-graph.component';
 import { PieChartComponent } from './pie-chart/pie-chart.component';
 import { MainComponent } from './main/main.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -36,7 +37,8 @@ import { MainComponent } from './main/main.component';
     NgxChartsModule,
     HttpClientModule,
     NgxDatatableModule,
-    DropdownModule
+    DropdownModule,
+    FormsModule
     
       
    

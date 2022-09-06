@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { Observable, ReplaySubject } from 'rxjs';
 import { DataService } from '../data.service';
 import { Reviews } from '../reviews';
@@ -13,6 +14,9 @@ declare var jQuery: any
   providers: [DataService]
 })
 
+
+
+
 export class MainComponent implements OnInit {
 
 
@@ -25,9 +29,24 @@ export class MainComponent implements OnInit {
   public newData: any[] = [];
   public StartTimes: TimeFormates[];
   public ClosedTimes: TimeFormates[];
-  public category:Category[];
+  public category: Category[];
 
-  constructor(private dataService: DataService) {
+  public formsSubmitData: EditModelDialog[] = [];
+
+
+  public Brands: EditModelDialog = {
+    Address: '', Mobilenumber: '', Phonenumber: '',
+    Hours: '',
+    Minutes: '',
+    Category: '',
+    Websites: ''
+  };
+
+
+
+
+
+  constructor(private dataService: DataService, private router: Router) {
 
     this.StartTimes = [
       { 'name': '00' },
@@ -57,15 +76,18 @@ export class MainComponent implements OnInit {
     ];
 
     this.ClosedTimes = [
-      { 'name': '0030' },
+      { 'name': '00' },
+      { 'name': '30' },
     ];
 
-    this.category =[
-      {'name':'selectProductCategory1'},
-      {'name':'selectProductCategory2'},
-      {'name':'selectProductCategory3'},
-      {'name':'selectProductCategory4'}
+    this.category = [
+      { 'name': 'selectProductCategory1' },
+      { 'name': 'selectProductCategory2' },
+      { 'name': 'selectProductCategory3' },
+      { 'name': 'selectProductCategory4' }
     ];
+    //this.formData=new this.formData(){}
+
   }
 
   public ngOnInit(): void {
@@ -97,8 +119,33 @@ export class MainComponent implements OnInit {
     jQuery("#exampleModals").modal('show');
   }
 
+  public onSubmit(Brands: EditModelDialog) {
+    console.log('tahir:', this.Brands);
+    let formValue = this.Brands;
+    console.log('formValue:', formValue);
+    this.formsSubmitData.push(formValue);
+    console.log('formvalue:', this.formsSubmitData);
+
+  }
+
 
 }
+
+
+
+interface EditModelDialog {
+  Address: string;
+  Mobilenumber: string;
+  Phonenumber: string;
+  Hours: string;
+  Minutes: string;
+  Category: string;
+  Websites: string;
+
+
+}
+
+
 
 interface TimeFormates {
   name: string;
@@ -106,5 +153,6 @@ interface TimeFormates {
 }
 
 interface Category {
-  name:string;
+  name: string;
 }
+

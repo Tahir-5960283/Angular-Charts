@@ -1,5 +1,3 @@
-
-
 .text-center {
     margin-left: 20px;
     padding: 5px;
@@ -8,6 +6,7 @@
 .button button {
     color: blue;
 }
+
 .datatable {
     display: flex;
     flex-direction: row;
@@ -48,11 +47,6 @@
     padding-left: 10px;
 }
 
-.center-text {
-    padding-left: 10px;
-
-}
-
 .row {
     display: flex;
     flex-direction: column;
@@ -60,38 +54,35 @@
 }
 
 
-.top-content{
+.top-content {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding: 20px;
 }
-.images{
-    border: 1px solid gainsboro;
-    padding: 5px;
-   
-}
-.DataContent{
-    border: 1px solid gainsboro;
-    padding: 5px;
-   margin-left:30px;
-}
-.reviews{
-    margin-top: 20px;
-}
-.bottom-container{
-    margin-top: 20px;
-}
-.p-1row{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-.grid{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-.p-dropdown{
 
+.images {
+    border: 1px solid gainsboro;
+    padding: 5px;
+
+}
+
+.DataContent {
+    border: 1px solid gainsboro;
+    padding: 5px;
+    margin-left: 30px;
+    justify-content: space-between;
+}
+
+.reviews {
+    margin-top: 20px;
+}
+
+.bottom-container {
+    margin-top: 20px;
+}
+
+.font-size {
+    font-size: 15px;
+    font-weight: 15px;
 }
